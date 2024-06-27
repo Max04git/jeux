@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0">
+    <title>Jeux</title>
+    <link  type="text/css" rel="stylesheet" href="assets/style/styleallumette.css">
+</head>
+
+<body>
+    <div class="header">
+        <left>
+            <ul>
+                <li><a href="index.html">Accueil</li></a>
+                <li><a href="index.html">Les jeux</li></a>
+            </ul>
+        </left>
+        <right>
+            <ul>
+                <li><a href="compte.html">Compte</a></li>
+                <li><a href="contact.html">Contact</li></a>
+            </ul>
+        </right>
+    </div>
+    
+    <div class="allumette" id="visible">
+        <div class="intro">
+            <h1>Jeu des allumettes</h1>
+        </div>
+        <div class="joueur" id="joueur">Appuyer sur jouer</div>
+        <div class="reste" id="reste">Il reste 21 allumettes</div>
+        <div class="affichage" id="affichage">|||||||||||||||||||||</div>
+        <div class="buttons">
+            <button class="button" onclick="restart()">jouer</button>
+            <button class="button" id="start" onclick="prendre('1')">1</button>
+            <button class="button" id="start" onclick="prendre('2')">2</button>
+            <button class="button"id="start"  onclick="prendre('3')">3</button>
+        </div>
+    </div>
+    
+    <script src="assets/script/scriptAllumette.js"></script>
+
+
+
+    <div class="footer">
+        MP - 2024
+    </div>
+</body>

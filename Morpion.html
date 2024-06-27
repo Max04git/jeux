@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0">
+    <title>Jeux</title>
+    <link  type="text/css" rel="stylesheet" href="assets/style/stylemorpion.css">
+</head>
+
+
+<body>
+    <div class="header">
+        <left>
+            <ul>
+                <li><a href="index.html">Accueil</li></a>
+                <li><a href="index.html">Les jeux</li></a>
+            </ul>
+        </left>
+        <right>
+            <ul>
+                <li><a href="compte.html">Compte</a></li>
+                <li><a href="contact.html">Contact</li></a>
+            </ul>
+        </right>
+    </div>
+
+    <div class="intro">
+        <h1>Morpion</h1>
+    </div>
+
+
+    <div class="plateau">
+        <div class="joueur" id="joueur">Appuyer sur jouer</div>
+        <div class="grille">
+            <button class="square" id="1" onclick="jouer('1')"></button>
+            <button class="square" id="2" onclick="jouer('2')"></button>
+            <button class="square" id="3" onclick="jouer('3')"></button>
+            <button class="square" id="4" onclick="jouer('4')"></button>
+            <button class="square" id="5" onclick="jouer('5')"></button>
+            <button class="square" id="6" onclick="jouer('6')"></button>
+            <button class="square" id="7" onclick="jouer('7')"></button>
+            <button class="square" id="8" onclick="jouer('8')"></button>
+            <button class="square" id="9" onclick="jouer('9')"></button>
+        </div>
+        <button class="button" id="start" onclick="restart()">jouer</button>
+    </div>
+    </div>
+    
+    <script src="assets/script/scriptMorpion.js"></script>
+
+
+
+    <div class="footer">
+        MP - 2024
+    </div>
+</body>

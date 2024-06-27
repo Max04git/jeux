@@ -1,0 +1,164 @@
+
+body{
+    
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    cursor:default;
+    height: 100%;
+    color: #000;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+li,ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    display: flex;
+    background-color: #0056b3;
+}
+
+.header left{
+    display: flex;
+    width: 50%;
+    justify-content: start;
+}
+
+.header right{
+    display: flex;
+    width: 50%;
+    justify-content: end;
+}
+
+.header ul{
+    display: flex;
+    margin: 6px;
+}
+.header li{
+    display: flex;
+    padding: 15px;
+    border-radius: 12px;
+    color: #eeeeee;
+    transition: background-color 0.8s;
+}
+.header li:hover{
+    background-color: #ffffff;
+}
+.header a{
+    text-decoration: none;
+    color: #eeeeee;
+    cursor:grab;
+}
+
+
+.intro{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    color: #fff;
+    background-color: #0056b3;
+    margin-top: auto;
+}
+
+
+
+/*Jeu des allumettes*/
+
+.allumette{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+.affichage{
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 10rem;
+    letter-spacing:20px;
+    padding-bottom: 30px;
+    color: rgb(132, 113, 99);
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(to top, #585f68, #585f68,  #ccff25);
+    background-color: #fff;
+}
+.affichage fin{
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 10rem;
+    letter-spacing:20px;
+    padding-bottom: 30px;
+    color: rgb(132, 113, 99);
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(to top, #363b41, #363b41,  #e1c212);
+    background-color: #fff;
+}
+
+.allumette h1{
+    font-size: 3rem;
+    font-weight: 100;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 7rem;
+}
+.button{
+    display: flex;
+    min-width: 100px;
+    min-height: 50px;
+    margin: 10px;
+    color: #fff;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    border-bottom: #000;
+    background-color: #0056b3;
+    cursor:grab;
+}
+
+#start{
+    background-color: rgb(21, 21, 114);
+    cursor:default  ;
+}
+
+.reste,.joueur{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+.buttonstart{
+    display: flex;
+    min-width: 100px;
+    min-height: 50px;
+    margin: 10px;
+    color: #fff;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    border-bottom: #000;
+    background-color: #0056b3;
+}

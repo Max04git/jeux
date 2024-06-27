@@ -1,0 +1,131 @@
+
+body{
+    
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    cursor:default;
+    height: 100%;
+    color: #000;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+li,ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    display: flex;
+    background-color: #0056b3;
+}
+
+.header left{
+    display: flex;
+    width: 50%;
+    justify-content: start;
+}
+
+.header right{
+    display: flex;
+    width: 50%;
+    justify-content: end;
+}
+
+.header ul{
+    display: flex;
+    margin: 6px;
+}
+.header li{
+    display: flex;
+    padding: 15px;
+    border-radius: 12px;
+    color: #eeeeee;
+    transition: background-color 0.8s;
+}
+.header li:hover{
+    background-color: #ffffff;
+}
+.header a{
+    text-decoration: none;
+    color: #eeeeee;
+    cursor:grab;
+}
+
+
+.intro{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+
+.main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    min-width: 320px;
+    padding: 2rem;
+    max-height: 500px;
+    min-height: 400px;
+    flex: 1;
+    color: #000;
+    margin: 0 10%;
+}
+
+.carte{
+    text-align: center;
+    background-color: #aaa;
+    padding: 8px;
+    border: 2.3px solid #999;
+    border-radius: 9px;
+    cursor: grab;
+    transition: transform 0.5s,background-color 0.5s;
+}
+#allumette{
+    background-image: url(../img/allumettes.jpg);
+}
+#morpion{
+    background-image: url(../img/morpion.jpg);
+}
+#morpion h2{
+    color: red;
+}
+.carte:hover{
+    background-color: #bbb;
+    transform: translateY(-10px);
+}
+.carte a{
+    text-decoration: none;
+    color:#000;
+    cursor:grab;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.carte h1,h2{
+    padding: 10px;
+    margin: 0;
+}
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    color: #fff;
+    background-color: #0056b3;
+    margin-top: auto;
+}
+
+
+
+
