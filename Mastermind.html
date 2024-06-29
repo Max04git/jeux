@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0">
+    <title>Jeux</title>
+    <link  type="text/css" rel="stylesheet" href="assets/style/stylemastermind.css">
+</head>
+
+
+<body>
+    <div class="header">
+        <left>
+            <ul>
+                <li><a href="index.html">Accueil</li></a>
+                <li><a href="index.html">Les jeux</li></a>
+            </ul>
+        </left>
+        <right>
+            <ul>
+                <li><a href="compte.html">Compte</a></li>
+                <li><a href="contact.html">Contact</li></a>
+            </ul>
+        </right>
+    </div>
+
+    <div class="intro">
+        <h1>Mastermind</h1>
+    </div>
+
+
+    <div class="container">
+        <!--<div class="joueur" id="joueur">Choisissez une couleur</div>-->
+        <div class="plateau">
+            <jeu>
+                <button class="ligne" id="one" ></button>
+                <button class="ligne" id="tow" ></button>
+                <button class="ligne" id="three" ></button>
+                <button class="ligne" id="four" ></button>
+            </jeu>
+            <resultat>
+                <button class="res" id="mal" ></button>
+                <button class="res" id="bon" ></button>
+            </resultat>
+        </div>
+        
+        <div class="palette">
+            <button class="couleur" id="yellow" onclick="jouer('yellow')">Jaune</button>
+            <button class="couleur" id="blue" onclick="jouer('blue')">Bleu</button>
+            <button class="couleur" id="red" onclick="jouer('red')">Rouge</button>
+            <button class="couleur" id="green" onclick="jouer('green')">Vert</button>
+            <button class="couleur" id="black" onclick="jouer('black')">Noir</button>
+            <button class="couleur" id="white" onclick="jouer('white')">Blanc</button>
+        </div>
+        <div class="service">
+            <button class="button" id="retour" onclick="retour()">Annuler</button>
+            <button class="button" id="valider" onclick="valider()">Valider</button>
+        </div>
+    </div>
+    </div>
+    
+    <script src="assets/script/scriptMastermind.js"></script>
+
+
+
+    <div class="footer">
+        MP - 2024
+    </div>
+</body>

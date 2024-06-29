@@ -1,0 +1,198 @@
+
+body{
+    
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    cursor:default;
+    height: 100%;
+    color: #000;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+li,ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    display: flex;
+    background-color: #0056b3;
+}
+
+.header left{
+    display: flex;
+    width: 50%;
+    justify-content: start;
+}
+
+.header right{
+    display: flex;
+    width: 50%;
+    justify-content: end;
+}
+
+.header ul{
+    display: flex;
+    margin: 6px;
+}
+.header li{
+    display: flex;
+    padding: 15px;
+    border-radius: 12px;
+    color: #eeeeee;
+    transition: background-color 0.8s;
+}
+.header li:hover{
+    background-color: #ffffff;
+}
+.header a{
+    text-decoration: none;
+    color: #eeeeee;
+    cursor:grab;
+}
+
+
+.intro{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    color: #fff;
+    background-color: #0056b3;
+    margin-top: auto;
+}
+
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 200;
+    font-size: 1.3rem;
+}
+.plateau{
+    display: flex;
+    width: 500px;
+    height: auto;
+    justify-content: space-evenly;
+    margin-top: 5px;
+}
+
+.plateau jeu{
+    display: flex;
+    width: auto;
+    height: auto;
+}
+.plateau resultat{
+    display: flex;
+    width: auto;
+    height: auto;
+}
+
+.ligne{
+    font-size: 0;
+    display: flex;
+    width: 40px;
+    height: 35px;
+    margin: 2%;
+    border: 2px solid #000;
+}
+.res{
+    display: flex;
+    min-width: 86px;
+    max-width: 87px;
+    height: 35px;
+    margin: 2%;
+    background-color: #eee;
+    border: 0px;
+}
+.palette{
+    display: flex;
+    width: 420px;
+    height: auto;
+    justify-content: center;
+    margin: 10px 0;
+}
+#one{
+    background-color: grey;
+}
+#tow{
+    background-color: grey;
+}
+#three{
+    background-color: grey;
+}
+#four{
+    background-color: grey;
+}
+.couleur{
+    display: flex;
+    width: 54px;
+    height: 24px;
+    margin: 1.5%;
+    font-size: 0;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s,width 0.3s,height 0.3s,font-size 0.2s;
+}
+#yellow{
+    background-color: yellow;
+    color:purple;
+    border: 0px;
+}
+#blue{
+    background-color: blue;
+    color:orange;   
+    border: 0px;
+}
+#red{
+    background-color: red;
+    color:green;
+    border: 0px;
+}
+#green{
+    background-color: green;
+    color:red;
+    border: 0px;
+}
+#black{
+    background-color: black;
+    color:white;
+    border: 0px;
+}
+#white{
+    background-color: white;
+    color:black;
+    border: 1px solid #000;
+}
+.couleur:hover{
+    width: 55px;
+    height: 25px;
+    font-size: 0.7rem;
+    transform: translateY(-1px);
+}
+
+.service{
+    display: flex;
+    width: 350px;
+    height: auto;
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
