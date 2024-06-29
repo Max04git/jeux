@@ -5,18 +5,14 @@ let idligne=['one','tow','three','four']
 let idlignereverse=['four','three','tow','one']
 let listecouleur=['yellow','blue','red','green','black','white']
 let couleurutilisé=[]
-let valide=false
-let code=['yellow','blue','red','green']
-let compteurLigne = 0;
+let valide=true
+let code=[]
+let compteurLigne=0
 
 
-function removeLigne(indices) {
-    indices.forEach(i=>document.getElementById(grille[i]).classList.remove("ligne"));
-}
 
-function restart(){
-    
-}
+
+
 
 function jouer(couleur){
     
@@ -87,8 +83,15 @@ function creerLigneSolution(victoire) {
     mal.style.fontSize='20px'
     bon.style.fontSize='20px'
     couleurutilisé=[];
+    
     for (let i=0;i<4;i++){
-        let line=document.getElementById(listecouleur[i])
+        let line=document.getElementById(idlignereverse[i])
+        line.style.background='grey'
+        line.innerText=''
+        
+    }
+    for (let i=0;i<4;i++){
+        let line=document.getElementById(idligne[i])
         line.style.background=code[i]
     }
     valide=true;
@@ -118,6 +121,7 @@ function verifier(){
     }
     if (compteurLigne==9){
         creerLigneSolution(false)
+        return
     }
     creerNouvelleLigne();
 }
@@ -146,10 +150,34 @@ function supprimerLignesEnTrop() {
     mal.innerText=''
 }
 
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+}
 
+function generationCode(){
+    let num=[]
+    for (let i=0;i<4;i++){
+        num.push(getRandomInt(6))
+    }
+    
+    for (let i=0;i<4;i++){
+        for (let j=i+1;j<4;j++){
+            if (num[i]==num[j]){
+                generationCode()
+                return
+            }
+        }
+    }
+    
+    for (let i=0;i<4;i++){
+        code.push(listecouleur[num[i]])
+    }
+    
+}
 
 function valider(){
     let buttonvalider=document.getElementById('valider')
+    
     
     if (couleurutilisé.length==4){
         valide=true
@@ -157,9 +185,17 @@ function valider(){
         return
     }
     
-    if (buttonvalider.innerText='Rejouer'){
+    if (buttonvalider.innerText=='Rejouer'){
         supprimerLignesEnTrop()
+        compteurLigne=0
         buttonvalider.innerText='Valider'
+        generationCode()
+        valide=false
+        return
+    }
+    if (buttonvalider.innerText=='Jouer'){
+        buttonvalider.innerText='Valider'
+        generationCode()
         valide=false
         return
     }
