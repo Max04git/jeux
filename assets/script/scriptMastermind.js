@@ -177,6 +177,7 @@ function generationCode(){
 
 function valider(){
     let buttonvalider=document.getElementById('valider')
+    let statut=document.getElementById('statut')
     
     
     if (couleurutilisé.length==4){
@@ -189,13 +190,16 @@ function valider(){
         supprimerLignesEnTrop()
         compteurLigne=0
         buttonvalider.innerText='Valider'
+        code=[]
         generationCode()
         valide=false
         return
     }
     if (buttonvalider.innerText=='Jouer'){
         buttonvalider.innerText='Valider'
+        statut.innerText=''
         generationCode()
+        statut.innerText="jouer"
         valide=false
         return
     }
