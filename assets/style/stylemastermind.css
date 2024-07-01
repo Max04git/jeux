@@ -194,6 +194,11 @@ h1{
     color:black;
     border: 1px solid #000;
 }
+#neutre{
+    background-color: grey;
+    color:black;
+    border: 1px solid #000;
+}
 .couleur:hover{
     width: 55px;
     height: 25px;
